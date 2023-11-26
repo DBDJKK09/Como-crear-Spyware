@@ -1,0 +1,55 @@
+Primero que todo vamos a necesitar Linux como sistema operativo, ya que el programa que usaremos está escrito para usarlo con Linux. 
+No importa que distribución utilicéis, cualquiera sirve, pero si no tenéis ni idea de cual usar, os recomiendo Kali Linux, mi favorita.
+
+==========================================================================================================================================
+
+PASO 1: Instala las dependencias.
+
+Para utilizar estas herramientas necesitaremos un par de dependencias.
+
+#Instalar paquete Maven y JDK 8		--->	apt install maven default-jdk default-jre openjdk-8-jdk openjdk-8-jre -y
+
+#Para generar un .EXE			--->	apt install zlib1g-dev libncurses5-dev lib32z1 lib32ncurses5 -y 
+
+==========================================================================================================================================
+
+PASO 2: Instala el software que vamos a utilizar.
+
+Para ello vamos a clonar la herramienta (s)AINT		--->	it clone https://github.com/tiagorlampert/sAINT.git
+
+#Luego dirígete a la carpeta creada			--->	cd sAINT
+
+#Una vez ahí, instala y configura las librerías		--->	chmod +x configure.sh
+
+#Después						--->	./configure.sh 
+
+#Y por último, iniciarlo				--->	java -jar sAINT.jar
+
+==========================================================================================================================================
+
+PASO 3: Crear el malware. 
+
+Nada más ejecutarlo os pide un correo, en el cual iréis recibiendo la información de la victima.
+En este punto os recomiendo crearos un email el cual no os vincule con nada, ya que podéis tener problemas.
+A parte de esto, os recomiendo que sea gmail, porque  luego es más simple configurar todo.
+
+Ahora nos hará unas cuantas preguntas, como que si queremos recibir las capturas de pantalla, capturas de webcam, 
+hacer que el malware sea persistente aunque apague el ordenador, y mantener los archivos en el ordenador infectado.
+
+Como última pregunta nos pedirá los caracteres maximos para enviar el mail. 
+Tened en cuenta que si poneis 100, cada 100 caracteres que escriba la victima os enviaran un mensaje a vuestra cuenta con la información. 
+Aquí cada uno debe de elegir a su gusto.
+Por último os pedirá una confirmación de los datos.
+
+Luego pregunta que si quieres generar el .exe, aunque yo prefiero usar el archivo de java.
+
+Seguidamente aparecerá un enlace de gmail, en el que tenéis que entrar y activar la opción. Esto es para poder recibir los mensajes con 
+la información de la victima.
+
+==========================================================================================================================================
+
+Ahora sólo queda probarlo, simplemente ves a un pc con Windows y abre el archivo exe o el jar, el que tu prefieras, y verifica que todo funciona 
+perfectamente.
+
+Si quieres verificar que funciona bien abre el buscador de Windows e  introduce: %appdata%
+Y si aparece la carpeta (s)AINT , quiere decir que se ha instalado correctamente.
